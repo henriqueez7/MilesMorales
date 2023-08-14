@@ -136,14 +136,13 @@ nav ul a:hover{
 }
 
 .img{
-    width: 32rem;
+    width: 32em;
 
 }
 
-
-@media (max-width: 725px){   
+@media (max-width: 888px){   
     .list{
-        position: absolute;
+        position: fixed;
         top: 12vh;
         right: 0;
         width: max-content;
@@ -168,60 +167,79 @@ nav ul a:hover{
         
     }
 
-    .text h1{
-        font-size: 3.9rem;
-
+    .paragrafo{
+        font-size: 1.1rem;
     }
 
-    .paragrafo{
-        font-size: 1.2rem;
+    .text h1{
+        font-size: 3rem;
+    }
+
+    .main{
+        overflow-x: hidden;
     }
 }
 
-@media (max-width: 706px){
+@media (max-width: 634px){
     .img{
-        width: 22rem;
-        padding-top: 136px;
+        width: 27rem;
+        padding-top: 3rem;
     }
+}
 
-    .text h1{
-        font-size: 3.4rem;
+@media (max-width: 557px){
+    .img{
+        width: 23em;
+        padding-top: 8rem;
     }
 
     .paragrafo{
         font-size: 1rem;
     }
-}
 
-@media (max-width: 686px){
     .text h1{
-        font-size: 2.3rem;
-
+        font-size: 2.4rem;
     }
 
-    .text p{
-        font-size: 17px;
+    .link{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 477px){
+    .img{
+        width: 19em;
+        padding-top: 12rem;
+    }
+
+    .paragrafo{
+        font-size: 0.9rem;
     }
 
     .link{
         font-size: 1rem;
     }
 
-    .img{
-        width: 25rem;
-        padding-bottom: 1rem;
-    }
-
-    .text{
-        padding-bottom: 23rem;
+    .text h1{
+        font-size: 2rem;
     }
 }
 
-@media (max-width: 667px){
+@media (max-width: 408px){
     .img{
-        padding-bottom: 10rem;
+        width: 17em;
+        padding-top: 15rem;
     }
-}  
 
+    .paragrafo{
+        font-size: 0.8rem;
+    }
 
+    .link{
+        font-size: 0.9rem;
+    }
 
+    .text h1{
+        font-size: 2rem;
+    }
+}
