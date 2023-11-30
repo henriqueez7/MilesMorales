@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#050423,#031E65);
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.logo{
+    width: 4rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav .filmes{
+    color: #850106;
+    border-bottom: 1px solid #850106;
+}
+
+nav ul a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul a:hover{
+    color: #850106;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color:#850106;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.mobile-menu.active .hamb1:nth-child(1) {
+    transform: rotate(-50deg) translate(-8px, 9px);
+}
+
+.mobile-menu.active .hamb2:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu.active .hamb3:nth-child(3) {
+    transform: rotate(50deg) translate(-5px, -8px);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    position: relative;
+    
+}
+
+.aviso{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    transition: all .5s;
+}
+
+
+.card{
+    background-image: linear-gradient(#1a1919, #141414);
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: ALL .5s;
+    margin:0 auto;
+}
+
+.card:hover{
+    background-image: linear-gradient(#11111159, rgba(0, 0, 0, 0.493))
+}
+
+.card .img{
+    background-image: url(https://i0.wp.com/www.portaldonerd.com.br/wp-content/uploads/2019/01/thumb-1920-968889.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.card:hover .img{
+    opacity: 1;
+    width: 400px;
+}
+
+.card .img2{
+    background-image: url(https://nacaomarvel.com.br/wp-content/uploads/2023/05/Fw8vmYJX0AMV8Mp.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.card:hover .img2{
+    opacity: 1;
+    width: 400px;
+}
+
+
+.card .text-card{
+    padding: 0px 20px; 
+    overflow: hidden;
+    height:0 ;
+    transition: all .5s;
+    transform: translateY(30px);
+}
+
+
+.card:hover .text-card{
+    padding: 20px;
+    height: 260px;
+    transform: translateY(0);
+}
+
+.card .text-card p{
+    margin-bottom: 0;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.descrição{
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .7;
+    padding-top: 20px;
+}
+
+.seta{
+    padding: 7px;
+    font-size: 28px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .seta{
+    transform: rotate(0);
+}
+
+
+@media (max-width: 783px){   
+    body{
+        height: 100%;
+        overflow: auto;
+    }
+
+    .list{
+        position: fixed;
+        top: 12vh;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.863);
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        padding: 2rem;
+        border-radius: .5rem;
+        transform: translateX(100%);
+        transition: transform 0,3s ease;
+        color: white;
+        display: flex;
+        z-index: 1000;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .mobile-menu.active {
+        transform: rotate(180deg);
+    }
+
+    .list.active{
+        transform: translateX(0);    
+    }
+
+    /*main*/
+
+
+    .main{
+        flex-direction: column;
+    }
+
+    .card{
+        margin: 5rem;
+       
+    }
+    
+}
