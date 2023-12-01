@@ -14,6 +14,7 @@ body{
 }
 
 .container{
+    height: 100%;
     max-width: 100;
     margin: 0 auto;
 
@@ -149,8 +150,10 @@ nav ul a:hover{
 }
 
 .img{
-    width: 29.7rem;
+    height: max-content;
+    width: 100%;
     padding: 5rem 1rem;
+    clip-path: circle(46%);
 }
 
 
@@ -217,9 +220,9 @@ nav ul a:hover{
 
 }
 
-@media (min-height: 813px){
+/* @media (min-height: 813px){
     .img{
         padding-top: 15rem;
     }
-}
+} */
 
